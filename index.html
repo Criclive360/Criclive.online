@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CricLive – IPL 2026 News, Fantasy Tips & Match Analysis</title>
+<meta name="description" content="CricLive.online – IPL 2026 cricket news, fantasy tips, match previews, player analysis and match summaries. Your ultimate cricket destination.">
+<meta name="keywords" content="IPL 2026 news, IPL fantasy tips, dream11 team today, IPL match preview, cricket news india, IPL 2026 schedule, IPL points table">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://criclive.online/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://criclive.online/">
+<meta property="og:title" content="CricLive – IPL 2026 Cricket News & Fantasy Tips">
+<meta property="og:description" content="IPL 2026 cricket news, fantasy tips, match previews and analysis. Updated before every match.">
+<meta property="og:site_name" content="CricLive">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CricLive","url":"https://criclive.online","potentialAction":{"@type":"SearchAction","target":"https://criclive.online/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsOrganization","name":"CricLive","url":"https://criclive.online","sport":"Cricket"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* ── THEMES ── */
+[data-theme="dark"]{
+  --bg:#0A0A0F;
+  --bg2:#111118;
+  --bg3:#18181F;
+  --bg4:#1E1E28;
+  --border:#252530;
+  --border2:#1A1A22;
+  --text:#F0EEF8;
+  --text2:#9896A8;
+  --text3:#55546A;
+  --accent:#E8652A;
+  --accent2:#F0884A;
+  --green:#2ECC71;
+  --blue:#5B8DEF;
+  --gold:#F0C040;
+  --red:#E05050;
+  --tag-bg:rgba(232,101,42,0.12);
+  --tag-bd:rgba(232,101,42,0.25);
+  --tag-text:#F09060;
+  --hover:rgba(255,255,255,0.035);
+  --card-bd:#252530;
+  --hero-grad:linear-gradient(135deg,#0A0A0F 0%,#12101A 100%);
+}
+[data-theme="light"]{
+  --bg:#F5F4F0;
+  --bg2:#FFFFFF;
+  --bg3:#F0EEE8;
+  --bg4:#E8E6DE;
+  --border:#D8D6CE;
+  --border2:#E8E6DE;
+  --text:#1A1818;
+  --text2:#5C5A68;
+  --text3:#9896A8;
+  --accent:#C84E18;
+  --accent2:#E06030;
+  --green:#1A9952;
+  --blue:#2858C8;
+  --gold:#C08020;
+  --red:#C03030;
+  --tag-bg:rgba(200,78,24,0.08);
+  --tag-bd:rgba(200,78,24,0.2);
+  --tag-text:#B04010;
+  --hover:rgba(0,0,0,0.035);
+  --card-bd:#D8D6CE;
+  --hero-grad:linear-gradient(135deg,#F5F4F0 0%,#EDE8E0 100%);
+}
+
+html{scroll-behavior:smooth;font-size:15px;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  transition:background .3s,color .3s;
+}
+
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:300;
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+}
+.hd{
+  max-width:1200px;margin:0 auto;
+  padding:0 20px;height:54px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.logo{
+  font-family:'Instrument Serif',serif;
+  font-size:1.5rem;
+  color:var(--text);
+  cursor:pointer;
+  letter-spacing:-.5px;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.logo span{color:var(--accent);font-style:italic;}
+
+.hd-nav{display:flex;gap:1px;}
+.hd-nav a{
+  font-size:.8rem;font-weight:500;
+  color:var(--text2);
+  padding:6px 12px;border-radius:6px;
+  cursor:pointer;transition:all .15s;
+  white-space:nowrap;
+}
+.hd-nav a:hover{color:var(--text);background:var(--hover);}
+.hd-nav a.active{color:var(--accent);font-weight:600;}
+
+.hd-right{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+
+.theme-btn{
+  width:34px;height:34px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:8px;
+  color:var(--text2);
+  font-size:.95rem;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .15s;
+}
+.theme-btn:hover{border-color:var(--text3);color:var(--text);}
+
+.ham{
+  display:none;
+  flex-direction:column;gap:5px;
+  background:none;border:none;padding:4px;cursor:pointer;
+}
+.ham span{
+  display:block;width:22px;height:1.5px;
+  background:var(--text2);border-radius:2px;transition:.25s;
+}
+
+/* Mobile nav */
+.mob-nav{
+  display:none;position:fixed;
+  inset:0;top:54px;
+  background:var(--bg2);z-index:299;
+  flex-direction:column;
+  padding:16px;gap:2px;
+  border-top:1px solid var(--border);
+}
+.mob-nav.open{display:flex;}
+.mob-nav a{
+  font-size:.95rem;font-weight:500;
+  color:var(--text2);padding:12px 14px;
+  border-radius:8px;cursor:pointer;
+  border-bottom:1px solid var(--border2);
+  transition:all .15s;
+}
+.mob-nav a:hover{background:var(--hover);color:var(--text);}
+
+/* ── CATEGORY BAR ── */
+.cat-bar{
+  background:var(--bg2);
+  border-bottom:1px solid var(--border);
+  overflow-x:auto;scrollbar-width:none;
+}
+.cat-bar::-webkit-scrollbar{display:none;}
+.cat-inner{
+  max-width:1200px;margin:0 auto;
+  padding:0 20px;display:flex;gap:0;
+}
+.cat-link{
+  font-size:.78rem;font-weight:500;
+  color:var(--text3);
+  padding:10px 14px;white-space:nowrap;
+  border-bottom:2px solid transparent;
+  cursor:pointer;transition:all .15s;
+}
+.cat-link:hover{color:var(--text2);}
+.cat-link.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600;}
+
+/* ── LAYOUT ── */
+.wrap{max-width:1200px;margin:0 auto;padding:24px 20px;}
+.main-grid{
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:28px;align-items:start;
+}
+
+/* ── SECTION LABEL ── */
+.sec-lbl{
+  display:flex;align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+.sec-lbl h2{
+  font-family:'DM Sans',sans-serif;
+  font-size:.7rem;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--text3);
+  display:flex;align-items:center;gap:8px;
+}
+.sec-lbl h2::before{
+  content:'';width:12px;height:2px;
+  background:var(--accent);border-radius:2px;
+}
+.sec-lbl a{
+  font-size:.75rem;color:var(--accent);
+  cursor:pointer;font-weight:500;
+}
+.sec-lbl a:hover{text-decoration:underline;}
+
+/* ── HERO ARTICLE ── */
+.hero-article{
+  background:var(--bg2);
+  border:1px solid var(--card-bd);
+  border-radius:12px;overflow:hidden;
+  margin-bottom:20px;cursor:pointer;
+  transition:border-color .2s;
+}
+.hero-article:hover{border-color:var(--accent);}
+.hero-inner{padding:24px 26px;}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.65rem;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:var(--tag-text);background:var(--tag-bg);
+  border:1px solid var(--tag-bd);
+  padding:3px 10px;border-radius:4px;margin-bottom:12px;
+}
+.hero-title{
+  font-family:'Instrument Serif',serif;
+  font-size:clamp(1.4rem,3vw,1.9rem);
+  font-weight:400;line-height:1.28;
+  color:var(--text);margin-bottom:10px;
+  letter-spacing:-.3px;
+}
+.hero-excerpt{
+  font-size:.88rem;color:var(--text2);
+  line-height:1.65;margin-bottom:14px;
+  display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden;
+}
+.hero-meta{
+  font-size:.72rem;color:var(--text3);
+  display:flex;gap:12px;align-items:center;
+}
+.hero-meta .dot-sep{color:var(--border);}
+
+/* ── NEWS LIST ── */
+.news-list{display:flex;flex-direction:column;gap:0;}
+.news-item{
+  display:flex;gap:14px;
+  padding:13px 0;
+  border-bottom:1px solid var(--border2);
+  cursor:pointer;transition:all .15s;
+  border-radius:8px;
+}
+.news-item:last-child{border-bottom:none;}
+.news-item:hover{
+  background:var(--hover);
+  padding-left:10px;padding-right:10px;
+  margin:0 -10px;
+}
+.ni-num{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.75rem;font-weight:700;
+  color:var(--border);
+  min-width:22px;flex-shrink:0;
+  padding-top:2px;
+}
+.ni-tag{
+  flex-shrink:0;
+  font-size:.58rem;font-weight:700;
+  letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--tag-text);background:var(--tag-bg);
+  border:1px solid var(--tag-bd);
+  padding:2px 7px;border-radius:3px;
+  height:fit-content;margin-top:2px;white-space:nowrap;
+}
+.ni-body{flex:1;min-width:0;}
+.ni-title{
+  font-size:.88rem;font-weight:600;
+  color:var(--text);line-height:1.45;
+  margin-bottom:3px;
+  display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden;
+}
+.ni-meta{font-size:.7rem;color:var(--text3);}
+
+/* ── TODAY'S MATCHES ── */
+.matches-card{
+  background:var(--bg2);
+  border:1px solid var(--card-bd);
+  border-radius:12px;overflow:hidden;
+  margin-bottom:20px;
+}
+.mc-head{
+  padding:14px 18px;
+  background:var(--bg3);
+  border-bottom:1px solid var(--border);
+  display:flex;justify-content:space-between;
+  align-items:center;
+}
+.mc-title{
+  font-size:.7rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--text2);
+}
+.mc-date{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.7rem;color:var(--text3);
+}
+.match-row{
+  padding:14px 18px;
+  border-bottom:1px solid var(--border2);
+  transition:background .15s;
+}
+.match-row:last-child{border-bottom:none;}
+.match-row:hover{background:var(--hover);}
+.match-teams{
+  font-size:.92rem;font-weight:600;
+  color:var(--text);margin-bottom:4px;
+}
+.match-teams span{color:var(--text3);font-weight:400;font-size:.82rem;margin:0 6px;}
+.match-info{
+  display:flex;gap:12px;
+  font-size:.73rem;color:var(--text3);
+}
+.match-time{
+  font-family:'JetBrains Mono',monospace;
+  color:var(--accent);font-weight:600;
+}
+.match-status{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:.62rem;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  padding:2px 8px;border-radius:3px;
+}
+.ms-upcoming{
+  background:rgba(91,141,239,0.1);
+  border:1px solid rgba(91,141,239,0.2);
+  color:var(--blue);
+}
+.ms-today{
+  background:rgba(232,101,42,0.1);
+  border:1px solid rgba(232,101,42,0.2);
+  color:var(--accent);
+}
+.no-match{
+  padding:20px 18px;
+  font-size:.82rem;color:var(--text3);
+  text-align:center;
+}
+
+/* ── NEWS GRID (2-col for news page) ── */
+.news-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:10px;overflow:hidden;
+}
+.ngi{
+  background:var(--bg2);
+  padding:16px;cursor:pointer;
+  transition:background .15s;
+}
+.ngi:hover{background:var(--hover);}
+.ngi-tag{
+  font-size:.58rem;font-weight:700;
+  letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--tag-text);background:var(--tag-bg);
+  border:1px solid var(--tag-bd);
+  padding:2px 7px;border-radius:3px;
+  display:inline-block;margin-bottom:8px;
+}
+.ngi-title{
+  font-size:.88rem;font-weight:600;
+  color:var(--text);line-height:1.45;
+  margin-bottom:6px;
+  display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden;
+}
+.ngi-meta{font-size:.7rem;color:var(--text3);}
+
+/* ── SIDEBAR ── */
+.sidebar{display:flex;flex-direction:column;gap:18px;}
+.sb-card{
+  background:var(--bg2);
+  border:1px solid var(--card-bd);
+  border-radius:10px;overflow:hidden;
+}
+.sb-head{
+  padding:10px 14px;
+  background:var(--bg3);
+  border-bottom:1px solid var(--border);
+  font-size:.68rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--text2);
+}
+
+/* Trending */
+.tr-row{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:10px 14px;
+  border-bottom:1px solid var(--border2);
+  cursor:pointer;transition:background .15s;
+}
+.tr-row:last-child{border-bottom:none;}
+.tr-row:hover{background:var(--hover);}
+.tr-n{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.78rem;font-weight:700;
+  color:var(--border);min-width:18px;flex-shrink:0;
+}
+.tr-title{
+  font-size:.78rem;font-weight:500;
+  color:var(--text2);line-height:1.4;
+  display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden;
+}
+
+/* Points table */
+.pts-tbl{width:100%;border-collapse:collapse;font-size:.76rem;}
+.pts-tbl th{
+  padding:7px 10px;text-align:left;
+  font-size:.6rem;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  color:var(--text3);
+  background:var(--bg3);
+  border-bottom:1px solid var(--border);
+}
+.pts-tbl td{
+  padding:7px 10px;
+  border-bottom:1px solid var(--border2);
+  color:var(--text2);
+}
+.pts-tbl tr:last-child td{border-bottom:none;}
+.pts-tbl tr:hover td{background:var(--hover);}
+.tc{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.8rem;font-weight:700;color:var(--text);
+}
+.pts-v{color:var(--accent);font-weight:700;font-family:'JetBrains Mono',monospace;}
+
+/* ── ARTICLE PAGE ── */
+#art-page{display:none;}
+.art-wrap{max-width:800px;margin:0 auto;padding:24px 20px;}
+.art-back{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.78rem;font-weight:600;
+  color:var(--text2);
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:6px;padding:6px 14px;
+  margin-bottom:20px;cursor:pointer;
+  transition:all .15s;
+}
+.art-back:hover{border-color:var(--text3);color:var(--text);}
+.art-tag{
+  display:inline-block;
+  font-size:.6rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--tag-text);background:var(--tag-bg);
+  border:1px solid var(--tag-bd);
+  padding:4px 10px;border-radius:4px;margin-bottom:12px;
+}
+.art-h1{
+  font-family:'Instrument Serif',serif;
+  font-size:clamp(1.5rem,3.5vw,2.2rem);
+  font-weight:400;line-height:1.25;
+  color:var(--text);margin-bottom:12px;
+  letter-spacing:-.4px;
+}
+.art-meta{
+  display:flex;gap:14px;flex-wrap:wrap;
+  font-size:.73rem;color:var(--text3);
+  padding:12px 0;
+  border-top:1px solid var(--border2);
+  border-bottom:1px solid var(--border2);
+  margin-bottom:22px;
+}
+.art-meta strong{color:var(--text2);font-weight:600;}
+.art-body{
+  font-size:.92rem;line-height:1.85;
+  color:var(--text2);
+}
+.art-body p{margin-bottom:16px;}
+.art-body h2{
+  font-family:'Instrument Serif',serif;
+  font-size:1.3rem;font-weight:400;
+  color:var(--text);margin:28px 0 10px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--border2);
+  letter-spacing:-.3px;
+}
+.art-body h3{
+  font-size:.95rem;font-weight:700;
+  color:var(--text);margin:20px 0 8px;
+}
+.art-body ul,.art-body ol{margin:10px 0 14px 22px;}
+.art-body li{margin-bottom:6px;font-size:.9rem;}
+.art-body strong{color:var(--text);font-weight:600;}
+.art-body blockquote{
+  border-left:3px solid var(--accent);
+  padding-left:16px;margin:18px 0;
+  color:var(--text3);font-style:italic;
+}
+.art-body .key-stat{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-left:3px solid var(--accent);
+  border-radius:6px;
+  padding:14px 16px;margin:18px 0;
+}
+.art-body .key-stat p{margin:0;font-size:.86rem;}
+
+/* Related */
+.rel-wrap{margin-top:32px;}
+.rel-list{
+  background:var(--bg2);
+  border:1px solid var(--card-bd);
+  border-radius:10px;overflow:hidden;
+}
+
+/* ── FILTER TABS ── */
+.ftabs{
+  display:flex;overflow-x:auto;scrollbar-width:none;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:8px;margin-bottom:16px;
+}
+.ftabs::-webkit-scrollbar{display:none;}
+.ftab{
+  font-size:.75rem;font-weight:600;
+  color:var(--text3);
+  padding:8px 14px;background:none;border:none;
+  border-right:1px solid var(--border);
+  white-space:nowrap;cursor:pointer;transition:all .15s;
+}
+.ftab:last-child{border-right:none;}
+.ftab:hover{color:var(--text2);background:var(--hover);}
+.ftab.active{color:var(--accent);background:var(--bg2);font-weight:700;}
+
+/* ── SCHEDULE ── */
+.sch-wrap{
+  background:var(--bg2);border:1px solid var(--card-bd);
+  border-radius:10px;overflow:hidden;
+}
+.sch-row{
+  display:grid;grid-template-columns:1fr auto;
+  align-items:center;
+  padding:14px 18px;
+  border-bottom:1px solid var(--border2);
+  gap:12px;transition:background .15s;
+}
+.sch-row:last-child{border-bottom:none;}
+.sch-row:hover{background:var(--hover);}
+.sch-match{font-size:.88rem;font-weight:600;color:var(--text);}
+.sch-venue{font-size:.74rem;color:var(--text3);margin-top:3px;}
+.sch-r{text-align:right;flex-shrink:0;}
+.sch-date{
+  font-family:'JetBrains Mono',monospace;
+  font-size:.76rem;font-weight:600;color:var(--text2);
+}
+.sch-time{font-size:.72rem;color:var(--accent);font-weight:600;margin-top:2px;}
+
+/* ── BLOG ── */
+.blog-wrap{max-width:820px;margin:0 auto;}
+.blog-art{
+  background:var(--bg2);border:1px solid var(--card-bd);
+  border-radius:12px;padding:30px 34px;
+}
+.blog-art h1{
+  font-family:'Instrument Serif',serif;
+  font-size:1.75rem;font-weight:400;
+  color:var(--text);margin-bottom:10px;letter-spacing:-.4px;
+}
+.blog-art h2{
+  font-family:'Instrument Serif',serif;
+  font-size:1.2rem;font-weight:400;
+  color:var(--text);margin:22px 0 9px;
+  padding-bottom:6px;border-bottom:1px solid var(--border2);
+}
+.blog-art h3{font-size:.9rem;font-weight:700;color:var(--text);margin:16px 0 6px;}
+.blog-art p{font-size:.88rem;color:var(--text2);margin-bottom:11px;line-height:1.75;}
+.blog-art ul,.blog-art ol{margin:9px 0 12px 22px;font-size:.87rem;color:var(--text2);}
+.blog-art li{margin-bottom:5px;line-height:1.6;}
+.b-tag{
+  font-size:.6rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  color:var(--tag-text);background:var(--tag-bg);
+  border:1px solid var(--tag-bd);
+  padding:3px 9px;border-radius:4px;
+  display:inline-block;margin-bottom:10px;
+}
+.b-meta{
+  font-size:.74rem;color:var(--text3);
+  display:flex;gap:14px;flex-wrap:wrap;
+  margin-bottom:18px;padding-bottom:16px;
+  border-bottom:1px solid var(--border);
+}
+
+/* ── STATIC ── */
+.static-wrap{
+  max-width:700px;margin:0 auto;
+  background:var(--bg2);border:1px solid var(--card-bd);
+  border-radius:10px;padding:28px;
+}
+.static-wrap h1{
+  font-family:'Instrument Serif',serif;
+  font-size:1.7rem;font-weight:400;
+  color:var(--text);margin-bottom:14px;
+}
+.static-wrap h2{font-size:.95rem;font-weight:700;color:var(--text);margin:18px 0 7px;}
+.static-wrap p{font-size:.88rem;color:var(--text2);margin-bottom:10px;line-height:1.7;}
+.cf{margin-top:16px;display:flex;flex-direction:column;gap:11px;}
+.fg{display:flex;flex-direction:column;gap:5px;}
+.fg label{font-size:.77rem;font-weight:600;color:var(--text2);}
+.fg input,.fg textarea{
+  background:var(--bg3);border:1px solid var(--border);
+  border-radius:6px;padding:9px 12px;
+  color:var(--text);font-family:'DM Sans',sans-serif;
+  font-size:.86rem;transition:border-color .15s;
+}
+.fg input:focus,.fg textarea:focus{outline:none;border-color:var(--accent);}
+.fg textarea{resize:vertical;min-height:100px;}
+.btn-send{
+  background:var(--accent);color:#fff;
+  border:none;border-radius:6px;padding:11px;
+  font-size:.86rem;font-weight:700;
+  cursor:pointer;transition:opacity .15s;
+}
+.btn-send:hover{opacity:.85;}
+
+/* ── AD ── */
+.ad{
+  background:var(--bg3);
+  border:1px dashed var(--border);
+  border-radius:8px;padding:14px;
+  text-align:center;
+  font-size:.68rem;font-weight:600;
+  letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--text3);margin-bottom:18px;
+}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--bg2);
+  border-top:1px solid var(--border);
+  margin-top:40px;padding:32px 20px 18px;
+}
+.ft{max-width:1200px;margin:0 auto;}
+.ft-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:24px;margin-bottom:22px;
+}
+.ft-logo{
+  font-family:'Instrument Serif',serif;
+  font-size:1.3rem;color:var(--text);
+  cursor:pointer;margin-bottom:8px;display:block;
+}
+.ft-logo span{color:var(--accent);font-style:italic;}
+.ft-brand p{font-size:.78rem;color:var(--text3);line-height:1.6;}
+.ft-col h4{
+  font-size:.64rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--text3);margin-bottom:10px;
+}
+.ft-col ul{list-style:none;}
+.ft-col ul li{margin-bottom:7px;}
+.ft-col ul li a{
+  font-size:.78rem;color:var(--text3);
+  cursor:pointer;transition:color .15s;
+}
+.ft-col ul li a:hover{color:var(--text2);}
+.ft-btm{
+  border-top:1px solid var(--border2);
+  padding-top:14px;
+  display:flex;justify-content:space-between;
+  font-size:.73rem;color:var(--text3);
+  flex-wrap:wrap;gap:8px;
+}
+
+/* ── PAGES ── */
+.page{display:none;}.page.active{display:block;}
+
+/* ── SKELETON ── */
+.skel{
+  background:linear-gradient(90deg,var(--bg3) 25%,var(--bg2) 50%,var(--bg3) 75%);
+  background-size:200% 100%;
+  animation:shim 1.5s infinite;border-radius:6px;
+}
+@keyframes shim{0%{background-position:-200% 0}100%{background-position:200% 0}}
+
+/* ── WHATSAPP SHARE ── */
+.wa-share{
+  display:inline-flex;align-items:center;gap:6px;
+  background:#25D366;color:#fff;
+  border:none;border-radius:6px;
+  padding:7px 14px;font-size:.78rem;font-weight:700;
+  cursor:pointer;margin-top:16px;transition:opacity .15s;
+}
+.wa-share:hover{opacity:.88;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .main-grid{grid-template-columns:1fr;}
+  .sidebar{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .ft-grid{grid-template-columns:1fr 1fr;}
+  .news-grid{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  html{font-size:14px;}
+  .hd-nav{display:none;}
+  .ham{display:flex;}
+  .sidebar{grid-template-columns:1fr;}
+  .ft-grid{grid-template-columns:1fr 1fr;}
+  .blog-art,.static-wrap,.art-wrap{padding:16px;}
+  .hero-inner{padding:18px;}
+}
+@media(max-width:400px){
+  .ft-grid{grid-template-columns:1fr;}
+  .news-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="hd">
+    <span class="logo" onclick="goPage('home')">Cric<span>Live</span></span>
+    <nav class="hd-nav">
+      <a class="active" id="n-home" onclick="goPage('home')">Home</a>
+      <a id="n-news" onclick="goPage('news')">News</a>
+      <a id="n-fantasy" onclick="goPage('fantasy')">Fantasy</a>
+      <a id="n-blog" onclick="goPage('blog')">Blog</a>
+      <a id="n-schedule" onclick="goPage('schedule')">Schedule</a>
+      <a id="n-about" onclick="goPage('about')">About</a>
+    </nav>
+    <div class="hd-right">
+      <button class="theme-btn" id="theme-btn" onclick="toggleTheme()">☀</button>
+      <button class="ham" onclick="toggleMob()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="cat-bar">
+    <div class="cat-inner">
+      <span class="cat-link active" onclick="goPage('home')">Top Stories</span>
+      <span class="cat-link" onclick="filterAndGo('Fantasy')">Fantasy Tips</span>
+      <span class="cat-link" onclick="filterAndGo('Match Preview')">Match Previews</span>
+      <span class="cat-link" onclick="filterAndGo('Match Report')">Match Reports</span>
+      <span class="cat-link" onclick="filterAndGo('Analysis')">Analysis</span>
+      <span class="cat-link" onclick="filterAndGo('Player Focus')">Player Focus</span>
+      <span class="cat-link" onclick="goPage('schedule')">Schedule</span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mob-nav">
+  <a onclick="goPage('home');toggleMob()">Home</a>
+  <a onclick="goPage('news');toggleMob()">All News</a>
+  <a onclick="goPage('fantasy');toggleMob()">Fantasy Tips</a>
+  <a onclick="goPage('blog');toggleMob()">Blog</a>
+  <a onclick="goPage('schedule');toggleMob()">Schedule</a>
+  <a onclick="goPage('about');toggleMob()">About</a>
+  <a onclick="goPage('contact');toggleMob()">Contact</a>
+</div>
+
+<!-- ════ HOME PAGE ════ -->
+<div class="page active" id="page-home">
+<div class="wrap">
+  <div class="ad">Advertisement · Google AdSense</div>
+  <div class="main-grid">
+
+    <!-- LEFT -->
+    <div>
+      <!-- Today's Matches -->
+      <div class="sec-lbl"><h2>Today's Matches</h2></div>
+      <div class="matches-card" id="matches-card">
+        <div class="mc-head">
+          <span class="mc-title">IPL 2026 Schedule</span>
+          <span class="mc-date" id="today-date"></span>
+        </div>
+        <div id="matches-list">
+          <div class="no-match">Loading schedule...</div>
+        </div>
+      </div>
+
+      <div class="ad">Advertisement · Google AdSense</div>
+
+      <!-- Hero Article -->
+      <div class="sec-lbl"><h2>Top Story</h2></div>
+      <div class="hero-article" id="hero-article" onclick="">
+        <div class="hero-inner">
+          <div class="hero-tag" id="hero-tag">IPL 2026</div>
+          <div class="hero-title" id="hero-title">Loading latest article...</div>
+          <div class="hero-excerpt" id="hero-excerpt"></div>
+          <div class="hero-meta">
+            <span>CricLive Editorial</span>
+            <span class="dot-sep">·</span>
+            <span id="hero-time">just now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- News List -->
+      <div class="sec-lbl">
+        <h2>Latest News</h2>
+        <a onclick="goPage('news')">View all →</a>
+      </div>
+      <div class="news-list" id="home-news-list"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sb-card">
+        <div class="sb-head">Trending Now</div>
+        <div id="trending-list"></div>
+      </div>
+
+      <div class="sb-card">
+        <div class="sb-head">IPL 2026 · Points Table</div>
+        <table class="pts-tbl">
+          <thead><tr><th>Team</th><th>M</th><th>W</th><th>Pts</th><th>NRR</th></tr></thead>
+          <tbody id="pts-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="ad" style="height:240px;display:flex;align-items:center;justify-content:center">AdSense 300×250</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════ NEWS PAGE ════ -->
+<div class="page" id="page-news">
+<div class="wrap">
+  <div class="sec-lbl"><h2>IPL 2026 · All News</h2></div>
+  <div class="ftabs">
+    <button class="ftab active" onclick="filterNews('all',this)">All</button>
+    <button class="ftab" onclick="filterNews('Fantasy',this)">Fantasy</button>
+    <button class="ftab" onclick="filterNews('Match Preview',this)">Previews</button>
+    <button class="ftab" onclick="filterNews('Match Report',this)">Reports</button>
+    <button class="ftab" onclick="filterNews('Analysis',this)">Analysis</button>
+    <button class="ftab" onclick="filterNews('MI',this)">MI</button>
+    <button class="ftab" onclick="filterNews('CSK',this)">CSK</button>
+    <button class="ftab" onclick="filterNews('RCB',this)">RCB</button>
+    <button class="ftab" onclick="filterNews('KKR',this)">KKR</button>
+    <button class="ftab" onclick="filterNews('GT',this)">GT</button>
+    <button class="ftab" onclick="filterNews('SRH',this)">SRH</button>
+  </div>
+  <div class="news-grid" id="all-news-grid"></div>
+</div>
+</div>
+
+<!-- ════ FANTASY PAGE ════ -->
+<div class="page" id="page-fantasy">
+<div class="wrap">
+  <div class="sec-lbl"><h2>Fantasy Tips · Dream11</h2></div>
+  <div class="news-list" id="fantasy-list"></div>
+</div>
+</div>
+
+<!-- ════ ARTICLE PAGE ════ -->
+<div id="art-page">
+<div class="art-wrap">
+  <button class="art-back" onclick="closeArticle()">← Back</button>
+  <div id="art-content"></div>
+  <button class="wa-share" id="wa-btn" onclick="shareWhatsApp()">Share on WhatsApp</button>
+  <div class="rel-wrap">
+    <div class="sec-lbl"><h2>Related Articles</h2></div>
+    <div class="rel-list" id="rel-list"></div>
+  </div>
+</div>
+</div>
+
+<!-- ════ BLOG PAGE ════ -->
+<div class="page" id="page-blog">
+<div class="wrap"><div class="blog-wrap">
+  <div class="blog-art">
+    <span class="b-tag">IPL 2026 Guide</span>
+    <h1>IPL 2026: The Complete Guide to Teams, Schedule, Fantasy Tips and Match Analysis</h1>
+    <div class="b-meta"><span>March 28, 2026</span><span>CricLive Editorial</span><span>9 min read</span></div>
+    <p>IPL 2026 is the most anticipated cricket tournament of the year. CricLive covers every angle — match previews before each fixture, fantasy tips to help you win on Dream11, and detailed match summaries after every game. Here is everything you need to know about IPL 2026.</p>
+    <h2>Season at a Glance</h2>
+    <ul>
+      <li><strong>Start Date:</strong> March 28, 2026</li>
+      <li><strong>Total Matches:</strong> 84 league + playoff matches</li>
+      <li><strong>Format:</strong> Double round-robin, top 4 qualify for playoffs</li>
+      <li><strong>Prize Money:</strong> Rs 20 Crore for winners</li>
+      <li><strong>Broadcast:</strong> Star Sports (TV), JioCinema (free streaming)</li>
+    </ul>
+    <h2>All 10 IPL 2026 Teams</h2>
+    <h3>Mumbai Indians — Wankhede Stadium</h3>
+    <p>Five-time champions. The most successful franchise in IPL history under Rohit Sharma's leadership.</p>
+    <h3>Chennai Super Kings — MA Chidambaram Stadium</h3>
+    <p>MS Dhoni's side. Four titles, ten finals — the gold standard of IPL consistency. Chepauk's spin-friendly surface is purpose-built for their bowling attack.</p>
+    <h3>Royal Challengers Bengaluru — Chinnaswamy Stadium</h3>
+    <p>Virat Kohli's franchise. The flat Chinnaswamy pitch consistently produces 200+ scores. RCB's most balanced squad in years.</p>
+    <h3>Kolkata Knight Riders — Eden Gardens</h3>
+    <p>Two-time champions at India's most iconic stadium. KKR combine flair with tactical intelligence.</p>
+    <h3>Gujarat Titans — Narendra Modi Stadium</h3>
+    <p>Back-to-back title winners. Playing at the world's largest cricket stadium gives them a formidable home advantage.</p>
+    <h3>Sunrisers Hyderabad — Rajiv Gandhi Intl Stadium</h3>
+    <p>Record-breaking batting unit. The most aggressive team in IPL 2026 with an attack-first philosophy.</p>
+    <h3>Rajasthan Royals — Sawai Mansingh Stadium</h3>
+    <p>The 2008 inaugural champions, expert at identifying undervalued players before anyone else.</p>
+    <h3>Delhi Capitals — Arun Jaitley Stadium</h3>
+    <p>Young, exciting squad building toward a first IPL title. DC have the potential to peak at the right moment.</p>
+    <h3>Punjab Kings — IS Bindra Stadium, Mohali</h3>
+    <p>Hard-hitting batting culture. PBKS are overdue for a serious title challenge in 2026.</p>
+    <h3>Lucknow Super Giants — Ekana Cricket Stadium</h3>
+    <p>Consistent playoff qualifiers since their 2022 debut with a well-balanced squad.</p>
+    <h2>How CricLive Covers IPL 2026</h2>
+    <p>Before every match, CricLive publishes a detailed match preview covering pitch reports, head-to-head records, predicted playing XIs, and our match prediction. We also publish fantasy cricket tips with specific Dream11 team recommendations, captain and vice-captain picks, and differential selections to give you an edge in large contests.</p>
+    <p>After every match, we publish a complete match summary with scorecard highlights, star performers, key moments, and analysis of what the result means for the points table.</p>
+  </div>
+</div></div>
+</div>
+
+<!-- ════ SCHEDULE PAGE ════ -->
+<div class="page" id="page-schedule">
+<div class="wrap">
+  <div class="sec-lbl"><h2>IPL 2026 · Full Schedule</h2></div>
+  <div class="sch-wrap" id="sch-list"></div>
+</div>
+</div>
+
+<!-- ════ ABOUT PAGE ════ -->
+<div class="page" id="page-about">
+<div class="wrap"><div class="static-wrap">
+  <h1>About CricLive</h1>
+  <p>CricLive.online is India's growing cricket news and analysis platform — covering IPL 2026 with match previews, fantasy tips, player analysis, and match summaries published before and after every game.</p>
+  <h2>What We Cover</h2>
+  <p>Match previews, Dream11 fantasy tips, match reports, player analysis, pitch guides, points table, and complete IPL 2026 schedule. All content is published in clear, accessible English for cricket fans worldwide.</p>
+  <h2>Contact</h2>
+  <p>contact@criclive.online</p>
+</div></div>
+</div>
+
+<!-- ════ CONTACT PAGE ════ -->
+<div class="page" id="page-contact">
+<div class="wrap"><div class="static-wrap">
+  <h1>Contact Us</h1>
+  <p>Feedback, news tips, or partnership inquiries — we respond within 24 hours.</p>
+  <p><strong>contact@criclive.online</strong></p>
+  <div class="cf">
+    <div class="fg"><label>Name</label><input type="text" placeholder="Your name"></div>
+    <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+    <div class="fg"><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+    <button class="btn-send" onclick="alert('Message sent! We will respond within 24 hours.')">Send Message</button>
+  </div>
+</div></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <span class="ft-logo" onclick="goPage('home')">Cric<span>Live</span></span>
+        <p>IPL 2026 cricket news, match previews, fantasy tips and match analysis. Published before and after every match.</p>
+      </div>
+      <div class="ft-col"><h4>Navigate</h4><ul>
+        <li><a onclick="goPage('home')">Home</a></li>
+        <li><a onclick="goPage('news')">All News</a></li>
+        <li><a onclick="goPage('fantasy')">Fantasy Tips</a></li>
+        <li><a onclick="goPage('schedule')">Schedule</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>IPL 2026</h4><ul>
+        <li><a onclick="filterAndGo('Match Preview')">Match Previews</a></li>
+        <li><a onclick="filterAndGo('Match Report')">Match Reports</a></li>
+        <li><a onclick="filterAndGo('Analysis')">Analysis</a></li>
+        <li><a onclick="goPage('blog')">Complete Guide</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Info</h4><ul>
+        <li><a onclick="goPage('about')">About</a></li>
+        <li><a onclick="goPage('contact')">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-btm">
+      <span>© 2026 CricLive.online. All rights reserved.</span>
+      <span><a onclick="goPage('contact')" style="color:var(--text3)">Contact</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+'use strict';
+
+// ═══ STATE ═══
+let allNews = [], fromPage = 'home', currentArticleSlug = '';
+let activeNewsFilter = 'all';
+
+// ═══ STATIC ARTICLES ═══
+const ARTICLES = {
+  'ipl-2026-teams-preview':{tag:'IPL 2026',body:`<p>All 10 franchises arrive at IPL 2026 with genuine title ambitions and reshuffled squads. Here is the complete breakdown of where every team stands heading into the most competitive edition yet.</p><h2>The Favourites</h2><p><strong>Gujarat Titans</strong> are the team to beat. Two consecutive titles in their debut seasons have built a culture of winning at Narendra Modi Stadium. Their bowling attack — disciplined, varied, capable of defending or chasing any total — is the most complete unit in the tournament. Playing at the world's largest cricket stadium gives them structural advantages no other franchise can replicate.</p><p><strong>Mumbai Indians</strong> carry five titles and the weight of expectations. Rohit Sharma's ability to elevate his game in knockout cricket, combined with MI's historically clinical playoff record, makes them the benchmark against which every other team measures itself. Their squad depth in 2026 is arguably stronger than any previous MI edition.</p><p><strong>Chennai Super Kings</strong> represent the gold standard of consistency. Ten finals in fourteen seasons is a record no analyst can fully explain — but every CSK watcher understands it comes from experienced personnel, tactical intelligence, and MS Dhoni's irreplaceable finishing ability in the death overs.</p><h2>The Challengers</h2><p><strong>Sunrisers Hyderabad</strong> have redefined T20 batting with record-breaking team totals built on attacking from ball one. When their top order fires, no bowling attack in the world can contain them. <strong>Royal Challengers Bengaluru</strong> have rebuilt around Kohli with their most complete squad in years — the bowling attack has finally been strengthened to match their formidable batting.</p><h2>The Dark Horses</h2><p><strong>Rajasthan Royals</strong> continue their tradition of building clever, undervalued squads. Their overseas combination is one of the best in IPL 2026. <strong>Kolkata Knight Riders</strong> at Eden Gardens with full home support remain dangerous in playoff cricket. <strong>Lucknow Super Giants</strong> have been consistent playoff qualifiers and have the squad to finally go deeper.</p><h2>Our Prediction</h2><p>GT's tournament experience, home advantage, and bowling depth give them a narrow edge heading into IPL 2026. But in T20 cricket, a hot week at the right moment can take any team from fourth place to champions. Expect drama from every franchise.</p>`},
+  'virat-kohli-ipl-2026':{tag:'Player Focus',body:`<p>Virat Kohli is the leading run-scorer in IPL history. Over 7,000 runs across 17 seasons. The 2016 campaign where he scored 973 runs — a record that still stands — belongs in a different category of sporting achievement. In 2026, the question is no longer about his individual brilliance. It is about legacy.</p><h2>The 2016 Benchmark</h2><p>To understand what Kohli means to IPL, you have to understand 2016. In an era of explosive T20 batting, Kohli played cricket that belonged to a different tournament. Four centuries. Ten half-centuries. A strike rate above 152. Not one match where he failed to contribute. It remains the greatest individual batting performance in IPL history, and the standard against which every IPL batter is measured.</p><h2>The 2026 Squad Context</h2><p>What has changed in 2026 is the team around Kohli. RCB's auction strategy has systematically addressed the middle-order fragility that cost them in previous playoff campaigns. They now have reliable finishers, quality death bowlers, and overseas options who complement rather than duplicate existing strengths. Kohli no longer needs to carry every innings alone.</p><div class="key-stat"><p>Key stat: Kohli averages 52.3 at Chinnaswamy Stadium across his IPL career. RCB have seven home games in the league stage. Home form alone could be decisive in reaching the playoffs.</p></div><h2>Verdict</h2><p>At 37, Kohli's fitness and technical precision remain at elite level. 2026 could be the year he lifts the one trophy missing from his collection — and RCB's most complete squad in years gives him the best chance he has ever had.</p>`},
+  'ms-dhoni-csk-2026':{tag:'Player Focus',body:`<p>Every IPL season, the question is the same: will this be MS Dhoni's last? And every season, Dhoni answers with a match-winning finish from an impossible position, making the question irrelevant again.</p><h2>The Finisher's Art</h2><p>Dhoni's batting role at CSK has evolved into something unique in cricket. He does not build innings in the traditional sense. He arrives late — often with under 15 balls remaining, frequently with a target that looks beyond reach — and manufactures runs with a combination of calculated aggression and an almost supernatural ability to identify the right ball to attack.</p><div class="key-stat"><p>Career stat: Dhoni has scored 51% of his IPL runs in overs 17-20. No batter in IPL history has a higher proportion of runs in the death overs. His strike rate in the final over alone exceeds 180.</p></div><h2>Wicketkeeping Intelligence</h2><p>Dhoni's glove work at 44 remains sharper than most wicketkeepers half his age. His ability to read the pitch from behind the stumps influences CSK's entire bowling strategy in real time — which bowlers to use, when to set traps, when to push for wickets versus contain. Dhoni is effectively the team's tactical brain and wicketkeeper simultaneously.</p><h2>Legacy</h2><p>Whatever IPL 2026 brings, Dhoni's place in the tournament's history is beyond debate. Four titles. Ten finals. The most feared finisher T20 cricket has produced. In 2026, he gives a new generation of cricket fans one more reason to understand why.</p>`},
+  'ipl-fantasy-guide-2026':{tag:'Fantasy',body:`<p>Fantasy cricket success comes from process, not passion. Here is the complete methodology for winning on Dream11 across IPL 2026.</p><h2>Rule 1: Pitch First, Players Second</h2><p>Before selecting any player, understand the surface. Chinnaswamy and Wankhede favour batters heavily. Chepauk assists spinners from the first over. Narendra Modi Stadium has longer boundaries that suppress scores. Getting this analysis right before selection gives you a structural edge over the majority of players who pick on instinct.</p><h2>Rule 2: Form Over Reputation</h2><p>Check each player's last five match performances — not their career record, not their reputation, not what they did in a different tournament six months ago. Current form in current conditions is the only metric that matters. A mid-tier player scoring consistently at 160+ strike rate is a safer pick than a marquee name who has scored under 20 in their last three innings.</p><h2>The Captain Decision</h2><p>Your captain earns 2x points and your vice-captain earns 1.5x. This single decision is responsible for more position swings than any other selection. In large contests, a differential captain — picked by under 20% of teams — is how you win. Safe captaincy limits your ceiling when the obvious pick fires for everyone simultaneously.</p><div class="key-stat"><p>All-rounders who bat in the top six AND bowl four overs are the highest expected-value selections in fantasy cricket. A player who scores 40 and takes 2 wickets can earn 80+ fantasy points in a single match.</p></div><h2>Managing Credits</h2><p>Spend 60-65% of your budget on three to four players you have high conviction on. Use the remaining budget on form-based mid-tier picks and one differential player. Never spend maximum credits on a player purely because of reputation when their current form does not justify the cost.</p>`},
+  'srh-batting-revolution':{tag:'Analysis',body:`<p>In recent IPL seasons, Sunrisers Hyderabad did something no team had done before: they made 200 feel like a modest total. Their batting revolution — built on maximum aggression from the first ball — has produced record-breaking team scores and a new benchmark for T20 batting.</p><h2>The Philosophy: No Conservative Phase</h2><p>Traditional T20 batting prescribes a build-up in the powerplay, controlled acceleration in the middle overs, and maximum aggression in the death. SRH rejected this entirely. Their batters are instructed to attack from ball one, using fielding restrictions to devastating effect. The mathematical basis is clear: scoring at 14 per over in the powerplay rather than 9 creates a 30-run head start before the field spreads.</p><h2>The Record Numbers</h2><p>SRH posted three of the five highest team totals in IPL history in their most recent full season. Their powerplay scoring rate — the average runs per over in overs 1-6 — was the highest of any franchise over the same period.</p><div class="key-stat"><p>SRH average first innings score across their last 20 IPL matches: 211 runs. The tournament average first innings score: 183. That 28-run gap represents the structural advantage their philosophy generates consistently.</p></div><h2>The Risk</h2><p>On seaming or turning surfaces the same approach that produces 230 can produce 130 as wickets fall before batters have assessed conditions. SRH's record on difficult pitches remains their key uncertainty entering IPL 2026.</p>`},
+  'ipl-pitches-guide-2026':{tag:'Analysis',body:`<p>Understanding surface conditions at IPL venues is the single most underrated competitive advantage in fantasy cricket. Each ground produces dramatically different match outcomes — and the teams, bowlers, and batters suited to those conditions win disproportionately often.</p><h2>Chinnaswamy Stadium, Bengaluru — Batting Paradise</h2><p>The flattest, most batting-friendly surface in IPL cricket. Fast outfield, short boundaries, and a pitch that stays true across both innings consistently produces scores above 190. Load up on batters, pick offensive captain options, and minimise investment in pace bowlers for any Chinnaswamy fixture.</p><h2>MA Chidambaram Stadium, Chennai — Spinners' Ground</h2><p>The great equaliser of IPL pitches. Slow, turning surface that assists off-spin and leg-spin from the second over. Scores of 150-165 often win here. Load up on quality spinners — particularly those with proven records at Chepauk specifically — for any Chennai fixture.</p><h2>Wankhede Stadium, Mumbai</h2><p>High-scoring venue with the unique addition of swing bowling conditions in the evening marine layer. Pace bowlers can be dangerous in the powerplay before the surface flattens out. Balance batting and pace bowling investment for Wankhede fixtures.</p><div class="key-stat"><p>The most consistent predictor of IPL match outcomes: teams whose bowlers concede under 10 runs per over in overs 17-20 win approximately 65% of matches. Death bowling economy is the single biggest differentiator between teams that make playoffs and those that don't.</p></div><h2>Narendra Modi Stadium, Ahmedabad</h2><p>Longer boundaries than most IPL venues suppress batting scores significantly. Average scores at NMS run 15-20 runs below the tournament average. Adjust fantasy batting selections downward and expected score targets accordingly for all GT home fixtures.</p>`},
+  'rohit-sharma-ipl-2026':{tag:'Player Focus',body:`<p>Rohit Sharma has won five IPL titles as Mumbai Indians captain. He has been the defining captain of the tournament across his era — tactically astute, capable of absorbing pressure, and consistently able to deliver in knockout cricket when the stakes are highest. In 2026, he plays for a sixth title and a place in history no one can dispute.</p><h2>The Captaincy Record</h2><p>Five titles in nine IPL finals appearances as MI captain. That success rate reflects a combination of squad quality, tactical intelligence, and the ability to make crucial decisions correctly under extreme pressure. Rohit's best captaincy decisions are rarely the obvious ones — they are the changes in bowling order, the promoted pinch-hitter, the decision to hold back his own batting until the match situation demands it.</p><div class="key-stat"><p>Rohit at Wankhede Stadium: batting average 48.7, strike rate 148.3. His home ground record is among the best venue-specific batting records in IPL history. When MI need a decisive home performance, Rohit delivers at a frequency that makes it feel inevitable.</p></div><h2>The Batting Profile</h2><p>Rohit's batting in T20 cricket has a quality unique among elite players: a gear-change capability that appears instantaneous. He can bat at strike rate 90-100 while assessing conditions, then switch without warning to strike rate 200+ within a single over. Most batters operate in one mode. Rohit transitions between them at will.</p><h2>The Sixth Title</h2><p>MI's squad has been refreshed with youth and pace bowling depth — the areas that cost them in recent seasons. The platform is in place. In 2026, Rohit Sharma hunts a record that no one may ever match.</p>`},
+  'mi-csk-greatest-rivalry':{tag:'Feature',body:`<p>If IPL has a marquee fixture, it is Mumbai Indians versus Chennai Super Kings. Over seventeen seasons of competition, these two franchises have played more matches against each other than any other IPL pairing, producing some of the greatest T20 matches in cricket history.</p><h2>What Makes the Rivalry</h2><p>The MI-CSK rivalry works because it pits cricket's two most successful franchises — nine combined IPL titles between them — against each other with genuine championship stakes on both sides. Every MI-CSK match is implicitly about which franchise has the better philosophy: Mumbai's aggressive, high-variance cricket versus Chennai's patient, percentage-based approach built around experience and Dhoni's death-over mastery.</p><div class="key-stat"><p>Head-to-head record across full IPL history: the two franchises have met over 35 times. The margin between them has never exceeded 8 matches — testament to how evenly matched they have been across multiple eras and squad changes.</p></div><h2>The Captains' Battle</h2><p>Rohit Sharma and MS Dhoni represent two distinct models of IPL captaincy. Rohit leads by example — his batting sets the tempo, his aggression defines MI's style. Dhoni operates as a chess player — controlling the pace of the game, making small adjustments that compound into decisive advantages by the 19th over. When these two captains face each other, the tactical chess match often proves more decisive than individual performances.</p><h2>IPL 2026</h2><p>Both MI-CSK fixtures in the 2026 league stage are automatic calendar highlights. The Wankhede encounter will likely be high-scoring and aggressive. The Chepauk fixture will be a lower-scoring tactical battle where CSK's spin bowling gives them a structural advantage. Both should be watched live.</p>`},
+  'dream11-mistakes-avoid':{tag:'Fantasy',body:`<p>The majority of Dream11 players make the same errors repeatedly. These errors are the primary reason most fantasy teams finish in the bottom half of large contests. Identifying and eliminating them is the fastest route to consistent improvement.</p><h2>Mistake 1: Selecting on Reputation</h2><p>The most widespread and most damaging error in fantasy cricket. High-credit star names on a lean run of form cost you maximum credits for minimum points. Review each player's last five match performances specifically — not their career record, not their IPL reputation, not what they did last season.</p><h2>Mistake 2: Ignoring Surface Conditions</h2><p>Selecting a batting-heavy team for a Chepauk fixture, or a spin-heavy lineup for a Wankhede match, is a structural error that costs you before the toss. Research the average scores at the specific venue and understand the pitch characteristics. This information is freely available and consistently used by successful fantasy players.</p><h2>Mistake 3: Safe Captaincy in Large Contests</h2><p>In contests with 10,000+ teams, picking the obvious captain — selected by 40-50% of teams — limits your ceiling. If that player performs, everyone who picked them as captain advances equally. You gain no differentiation. Strategic differential captaincy is how large contests are won.</p><div class="key-stat"><p>Data shows winning teams in IPL large contests use a differential captain — picked by under 20% of teams — more than 60% of the time. The upside from an unpopular captain who fires outweighs the downside of an unpopular captain who fails.</p></div><h2>Mistake 4: Overloading One Team</h2><p>Picking seven or eight players from the stronger team creates catastrophic exposure to a single poor performance. Four to five players from the stronger team and two to three from the weaker team gives you exposure to the most likely high-scoring players while maintaining protection against T20 variance.</p><h2>Mistake 5: Undervaluing All-Rounders</h2><p>A quality all-rounder who bats in positions 4-6 and bowls four overs is the highest expected-value player in fantasy cricket. Build your team around available all-rounders first, then fill specialist spots with remaining budget.</p>`},
+};
+
+// ═══ NEWS DATA ═══
+function buildStaticNews() {
+  const now = Date.now();
+  return [
+    {slug:'ipl-2026-teams-preview',title:'IPL 2026 Preview: All 10 teams analyzed — who will lift the trophy?',tag:'IPL 2026',team:'',t:ago(now-1800000),excerpt:'All 10 franchises arrive with genuine title ambitions. We break down every squad, strength, and weakness.'},
+    {slug:'virat-kohli-ipl-2026',title:'Virat Kohli in IPL 2026: The pursuit of the one title missing from his collection',tag:'Player Focus',team:'RCB',t:ago(now-3600000),excerpt:'Over 7,000 IPL runs. Every record except the trophy. In 2026, can Kohli finally lead RCB to the title?'},
+    {slug:'ms-dhoni-csk-2026',title:'MS Dhoni at CSK: The art of finishing, and why it is still irreplaceable',tag:'Player Focus',team:'CSK',t:ago(now-5400000),excerpt:'At 44, Dhoni continues to redefine what is possible in T20 cricket. His role in 2026 explained.'},
+    {slug:'ipl-fantasy-guide-2026',title:'IPL 2026 Fantasy Cricket: The complete methodology for winning on Dream11',tag:'Fantasy',team:'Fantasy',t:ago(now-7200000),excerpt:'Pitch analysis, form over reputation, captain strategy — the full guide to winning fantasy cricket this IPL.'},
+    {slug:'srh-batting-revolution',title:'SRH batting revolution: The stats and philosophy behind their record totals',tag:'Analysis',team:'SRH',t:ago(now-14400000),excerpt:'How Sunrisers Hyderabad made 200 feel like a modest total, and whether they can go all the way in 2026.'},
+    {slug:'ipl-pitches-guide-2026',title:'IPL 2026 pitch guide: Surface conditions at every venue and how they affect results',tag:'Analysis',team:'',t:ago(now-32400000),excerpt:'Chinnaswamy, Chepauk, Wankhede — a complete guide to pitch conditions and their impact on fantasy cricket.'},
+    {slug:'rohit-sharma-ipl-2026',title:'Rohit Sharma in IPL 2026: Five titles, one mission, one record to break',tag:'Player Focus',team:'MI',t:ago(now-36000000),excerpt:'Five IPL titles as captain. A sixth would put Rohit in a statistical position that may never be matched.'},
+    {slug:'mi-csk-greatest-rivalry',title:'MI vs CSK: Why cricket\'s greatest T20 rivalry still defines the IPL',tag:'Feature',team:'MI',t:ago(now-25200000),excerpt:'Over 35 matches, nine combined titles, two contrasting philosophies. The rivalry that makes IPL unmissable.'},
+    {slug:'dream11-mistakes-avoid',title:'The five Dream11 mistakes IPL fantasy players make every season — and how to fix them',tag:'Fantasy',team:'Fantasy',t:ago(now-28800000),excerpt:'Reputation over form, wrong captains, overloading one team — the errors costing you fantasy points.'},
+  ];
+}
+
+function ago(ts) {
+  const d = Math.floor((Date.now() - ts) / 1000);
+  if (d < 60) return 'just now';
+  if (d < 3600) return Math.floor(d/60) + 'm ago';
+  if (d < 86400) return Math.floor(d/3600) + 'h ago';
+  return Math.floor(d/86400) + 'd ago';
+}
+
+// ═══ LOAD ARTICLES (static + dynamic from articles.json) ═══
+async function loadArticles() {
+  const staticNews = buildStaticNews();
+  try {
+    const r = await fetch('articles.json?v=' + Date.now());
+    const dynamic = await r.json();
+    // Dynamic articles first (newest), then static
+    allNews = [...dynamic, ...staticNews]
+      .filter((a, i, arr) => arr.findIndex(x => x.slug === a.slug) === i);
+  } catch(e) {
+    allNews = staticNews;
+  }
+  renderAll();
+}
+
+function renderAll() {
+  renderHero();
+  renderHomeNews();
+  renderTrending();
+  renderAllNews(allNews);
+  renderFantasy();
+}
+
+// ═══ RENDER ═══
+function renderHero() {
+  if (!allNews.length) return;
+  const a = allNews[0];
+  const el = G('hero-article');
+  el.onclick = () => openArticle(a.slug, 'home');
+  G('hero-tag').textContent = a.tag;
+  G('hero-title').textContent = a.title;
+  G('hero-excerpt').textContent = a.excerpt || '';
+  G('hero-time').textContent = a.t;
+}
+
+function renderHomeNews() {
+  G('home-news-list').innerHTML = allNews.slice(1, 9).map((a, i) => `
+    <div class="news-item" onclick="openArticle('${a.slug}','home')">
+      <span class="ni-num">${String(i+1).padStart(2,'0')}</span>
+      <span class="ni-tag">${a.tag}</span>
+      <div class="ni-body">
+        <div class="ni-title">${a.title}</div>
+        <div class="ni-meta">CricLive · ${a.t}</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderTrending() {
+  G('trending-list').innerHTML = allNews.slice(0, 6).map((a, i) => `
+    <div class="tr-row" onclick="openArticle('${a.slug}','home')">
+      <span class="tr-n">${i+1}</span>
+      <span class="tr-title">${a.title}</span>
+    </div>`).join('');
+}
+
+function ngiHTML(a, from) {
+  return `<div class="ngi" onclick="openArticle('${a.slug}','${from}')">
+    <span class="ngi-tag">${a.tag}</span>
+    <div class="ngi-title">${a.title}</div>
+    <div class="ngi-meta">CricLive · ${a.t}</div>
+  </div>`;
+}
+
+function renderAllNews(list) {
+  G('all-news-grid').innerHTML = list.map(a => ngiHTML(a, 'news')).join('');
+}
+
+function renderFantasy() {
+  const fantasy = allNews.filter(a => a.tag === 'Fantasy' || a.tag === 'Match Preview');
+  G('fantasy-list').innerHTML = fantasy.map((a, i) => `
+    <div class="news-item" onclick="openArticle('${a.slug}','fantasy')">
+      <span class="ni-num">${String(i+1).padStart(2,'0')}</span>
+      <span class="ni-tag">${a.tag}</span>
+      <div class="ni-body">
+        <div class="ni-title">${a.title}</div>
+        <div class="ni-meta">CricLive · ${a.t}</div>
+      </div>
+    </div>`).join('');
+}
+
+function filterNews(tag, btn) {
+  document.querySelectorAll('.ftab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeNewsFilter = tag;
+  if (tag === 'all') { renderAllNews(allNews); return; }
+  let f = allNews.filter(a =>
+    a.tag.toLowerCase().includes(tag.toLowerCase()) ||
+    a.team === tag ||
+    a.title.toUpperCase().includes(tag.toUpperCase())
+  );
+  renderAllNews(f.length ? f : allNews);
+}
+
+function filterAndGo(tag) {
+  goPage('news');
+  setTimeout(() => {
+    const btn = [...document.querySelectorAll('.ftab')].find(b => b.textContent.trim() === tag || b.onclick?.toString().includes(tag));
+    filterNews(tag, btn || document.querySelector('.ftab'));
+  }, 50);
+}
+
+// ═══ ARTICLE ═══
+function openArticle(slug, from) {
+  fromPage = from || 'home';
+  currentArticleSlug = slug;
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  G('art-page').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  const a = allNews.find(x => x.slug === slug);
+  const art = ARTICLES[slug] || (a && a.body ? { tag: a.tag, body: a.body } : null);
+
+  if (!a) { G('art-content').innerHTML = '<p style="color:var(--text3)">Article not found.</p>'; return; }
+
+  document.title = a.title + ' | CricLive';
+  injectSchema(a);
+
+  G('art-content').innerHTML = `
+    <span class="art-tag">${a.tag}</span>
+    <h1 class="art-h1">${a.title}</h1>
+    <div class="art-meta">
+      <span>${new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'})}</span>
+      <span><strong>CricLive Editorial</strong></span>
+      <span>5 min read</span>
+    </div>
+    <div class="art-body">${art ? art.body : '<p>Full article coming soon.</p>'}</div>`;
+
+  // Related
+  const others = allNews.filter(x => x.slug !== slug).slice(0, 5);
+  G('rel-list').innerHTML = others.map((x, i) => `
+    <div class="news-item" onclick="openArticle('${x.slug}','news')" style="padding:10px 14px;border-bottom:1px solid var(--border2);">
+      <span class="ni-num">${i+1}</span>
+      <span class="ni-tag">${x.tag}</span>
+      <div class="ni-body">
+        <div class="ni-title">${x.title}</div>
+        <div class="ni-meta">CricLive · ${x.t}</div>
+      </div>
+    </div>`).join('');
+}
+
+function closeArticle() {
+  G('art-page').style.display = 'none';
+  goPage(fromPage);
+  document.title = 'CricLive – IPL 2026 News, Fantasy Tips & Match Analysis';
+}
+
+function shareWhatsApp() {
+  const a = allNews.find(x => x.slug === currentArticleSlug);
+  const text = a ? `${a.title} — Read on CricLive: https://criclive.online` : 'Check out CricLive for IPL 2026 news and fantasy tips: https://criclive.online';
+  window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+}
+
+function injectSchema(a) {
+  const ex = G('art-schema'); if (ex) ex.remove();
+  const s = document.createElement('script');
+  s.id = 'art-schema'; s.type = 'application/ld+json';
+  s.text = JSON.stringify({
+    "@context":"https://schema.org","@type":"NewsArticle",
+    "headline":a.title,
+    "datePublished":a.publishedAt||new Date().toISOString(),
+    "author":{"@type":"Organization","name":"CricLive"},
+    "publisher":{"@type":"Organization","name":"CricLive","url":"https://criclive.online"},
+    "url":"https://criclive.online/news/"+a.slug,
+    "articleSection":a.tag
+  });
+  document.head.appendChild(s);
+}
+
+// ═══ ROUTING ═══
+function goPage(name) {
+  G('art-page').style.display = 'none';
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.hd-nav a').forEach(a => a.classList.remove('active'));
+  const pg = G('page-' + name); if (pg) pg.classList.add('active');
+  const nv = G('n-' + name); if (nv) nv.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (name === 'schedule') loadSchedule();
+  document.title = 'CricLive – IPL 2026 News, Fantasy Tips & Match Analysis';
+}
+
+function toggleMob() { G('mob-nav').classList.toggle('open'); }
+
+// ═══ THEME ═══
+function toggleTheme() {
+  const h = document.documentElement;
+  const dark = h.getAttribute('data-theme') === 'dark';
+  h.setAttribute('data-theme', dark ? 'light' : 'dark');
+  G('theme-btn').textContent = dark ? '☾' : '☀';
+  localStorage.setItem('cl-theme', dark ? 'light' : 'dark');
+}
+
+// ═══ TODAY'S MATCHES (static schedule) ═══
+const SCHEDULE = [
+  {t:'RCB vs KKR',d:'28 Mar 2026',tm:'7:30 PM',v:'Chinnaswamy, Bengaluru',dt:'2026-03-28'},
+  {t:'CSK vs MI',d:'29 Mar 2026',tm:'3:30 PM',v:'Chepauk, Chennai',dt:'2026-03-29'},
+  {t:'DC vs PBKS',d:'30 Mar 2026',tm:'7:30 PM',v:'Arun Jaitley, Delhi',dt:'2026-03-30'},
+  {t:'SRH vs RR',d:'31 Mar 2026',tm:'7:30 PM',v:'Rajiv Gandhi, Hyderabad',dt:'2026-03-31'},
+  {t:'GT vs LSG',d:'1 Apr 2026',tm:'7:30 PM',v:'Narendra Modi, Ahmedabad',dt:'2026-04-01'},
+  {t:'KKR vs MI',d:'2 Apr 2026',tm:'7:30 PM',v:'Eden Gardens, Kolkata',dt:'2026-04-02'},
+  {t:'RCB vs CSK',d:'4 Apr 2026',tm:'7:30 PM',v:'Chinnaswamy, Bengaluru',dt:'2026-04-04'},
+  {t:'PBKS vs SRH',d:'5 Apr 2026',tm:'3:30 PM',v:'IS Bindra, Mohali',dt:'2026-04-05'},
+  {t:'GT vs RR',d:'6 Apr 2026',tm:'7:30 PM',v:'Narendra Modi, Ahmedabad',dt:'2026-04-06'},
+  {t:'MI vs DC',d:'7 Apr 2026',tm:'7:30 PM',v:'Wankhede, Mumbai',dt:'2026-04-07'},
+];
+
+function renderTodayMatches() {
+  const todayStr = new Date().toISOString().split('T')[0];
+  const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+
+  G('today-date').textContent = new Date().toLocaleDateString('en-IN', {day:'numeric',month:'short',year:'numeric'});
+
+  const todayMatches = SCHEDULE.filter(m => m.dt === todayStr || m.dt === tomorrow);
+  const upcoming = SCHEDULE.filter(m => m.dt > tomorrow).slice(0, 3);
+  const show = todayMatches.length ? todayMatches : upcoming;
+
+  if (!show.length) {
+    G('matches-list').innerHTML = '<div class="no-match">No upcoming matches in schedule. Check back soon.</div>';
+    return;
+  }
+
+  G('matches-list').innerHTML = show.map(m => {
+    const isToday = m.dt === todayStr;
+    const isTomorrow = m.dt === tomorrow;
+    const statusClass = isToday ? 'ms-today' : 'ms-upcoming';
+    const statusText = isToday ? 'Today' : isTomorrow ? 'Tomorrow' : m.d;
+    return `<div class="match-row">
+      <div class="match-teams">${m.t.split(' vs ')[0]}<span>vs</span>${m.t.split(' vs ')[1]}</div>
+      <div class="match-info">
+        <span class="match-time">${m.tm} IST</span>
+        <span>${m.v}</span>
+        <span class="match-status ${statusClass}">${statusText}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ═══ POINTS TABLE ═══
+const PTS = [
+  {t:'GT',m:0,w:0,p:0,n:'+0.000'},{t:'MI',m:0,w:0,p:0,n:'+0.000'},
+  {t:'CSK',m:0,w:0,p:0,n:'+0.000'},{t:'RCB',m:0,w:0,p:0,n:'+0.000'},
+  {t:'KKR',m:0,w:0,p:0,n:'+0.000'},{t:'DC',m:0,w:0,p:0,n:'+0.000'},
+  {t:'SRH',m:0,w:0,p:0,n:'+0.000'},{t:'RR',m:0,w:0,p:0,n:'+0.000'},
+  {t:'PBKS',m:0,w:0,p:0,n:'+0.000'},{t:'LSG',m:0,w:0,p:0,n:'+0.000'},
+];
+function renderPts() {
+  G('pts-tbody').innerHTML = PTS.map(t => `
+    <tr>
+      <td><span class="tc">${t.t}</span></td>
+      <td>${t.m}</td><td>${t.w}</td>
+      <td><span class="pts-v">${t.p}</span></td>
+      <td style="font-family:'JetBrains Mono',monospace;font-size:.7rem">${t.n}</td>
+    </tr>`).join('');
+}
+
+// ═══ SCHEDULE PAGE ═══
+function loadSchedule() {
+  G('sch-list').innerHTML = SCHEDULE.map(m => `
+    <div class="sch-row">
+      <div>
+        <div class="sch-match">${m.t}</div>
+        <div class="sch-venue">${m.v}</div>
+      </div>
+      <div class="sch-r">
+        <div class="sch-date">${m.d}</div>
+        <div class="sch-time">${m.tm} IST</div>
+      </div>
+    </div>`).join('');
+}
+
+// ═══ HELPER ═══
+function G(id) { return document.getElementById(id); }
+
+// ═══ INIT ═══
+function init() {
+  // Theme
+  const saved = localStorage.getItem('cl-theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+    const btn = G('theme-btn');
+    if (btn) btn.textContent = saved === 'dark' ? '☀' : '☾';
+  }
+
+  renderPts();
+  renderTodayMatches();
+  loadArticles(); // loads static + dynamic from articles.json
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
