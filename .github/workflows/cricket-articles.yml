@@ -1,0 +1,40 @@
+name: Auto Generate Cricket Articles
+
+on:
+  schedule:
+    # Run every 2 hours
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-articles:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install node-fetch
+
+      - name: Generate articles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CRIC_API_KEY: ${{ secrets.CRIC_API_KEY }}
+        run: node generate-articles.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.email "bot@criclive.online"
+          git config --global user.name "CricLive Bot"
+          git add articles.json
+          git diff --staged --quiet || git commit -m "Auto: Update cricket articles $(date '+%Y-%m-%d %H:%M')"
+          git push
+          
